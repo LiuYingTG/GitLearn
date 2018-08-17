@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myM6">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery的使用</title>
+</head>
+<body ng-controller="myC6">
+<div id="name">name</div>
+<script src="../jsDB/angular.js"></script>
+<script>
+  let md=angular.module('myM6',['ng']);
+  md.controller('myC6',['$scope',function ($scope) {
+      let name=document.getElementById('name');
+      let nameJQ=angular.element(name);
+      nameJQ.css('background','red');
+  }]);
+</script>
+</body>
+</html>
